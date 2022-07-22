@@ -1,11 +1,26 @@
 :root {
-    
+    --result-color: #f4f4f4;
+    --display-color: #ffffff;
+    --h2-color: #5a537b;
+    --p-color: #353535;
+}
+.dark-theme {
+  --result-color: #1F2937;
+    --display-color: #273549;
+    --h2-color: #CCC1FF;
+    --p-color: #FFFFFF;
 }
 
 body {
   width: 550px;
   height: 1020px;
   margin: auto;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+  margin-left: 260px;
 }
 
 .convert {
@@ -74,14 +89,14 @@ button {
   margin-top: 0;
   padding-top: 36px;
 
-  background: #f4f4f4;
+  background: var(--result-color);
 }
 
 .display {
   width: 500px;
   height: 59px;
   margin-left: 25px;
-  background-color: #ffffff;
+  background-color: var(--display-color);
   text-align: center;
   padding-top: 30px;
   padding-bottom: 18.5px;
@@ -104,7 +119,7 @@ h2 {
 
   text-align: center;
 
-  color: #5a537b;
+  color: var(--h2-color);
 }
 p {
   width: 346px;
@@ -122,5 +137,5 @@ p {
 
   text-align: center;
 
-  color: #353535;
+  color: var(--p-color);
 }
